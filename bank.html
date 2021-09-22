@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <h1 class="font-bold text-6xl text-center mt-12"><span class="text-green-600">Your Balance </span><span class="text-blue-900"> Info</span></h1>
+    </header>
+    <main>
+        <section>
+
+
+                    <!-- deposit balance -->
+
+
+            <div class="grid grid-cols-3 gap-4 mt-11 w-3/4 mx-auto">
+            <div class="bg-green-300 rounded p-4">
+                <h1 class="text-4xl text-center text-yellow-600 font-extrabold">Deposit
+                </h1>
+                <h3 class="text-5xl text-center">$<span id="input-amount">00</span></h3>
+            </div>
+
+                     <!-- Withdraw balance -->
+
+
+            <div class="bg-yellow-400 rounded p-4">
+                <h1 class="text-4xl text-center text-indigo-900 font-extrabold">Withdraw
+                </h1>
+                <h3 class="text-5xl text-center">$<span id="Withdraw-balance">00</span></h3>
+            </div>
+
+                     <!-- Total You Have -->
+
+
+            <div class="bg-purple-700 rounded p-4">
+                <h1 class="text-4xl text-center text-pink-400 font-extrabold">Your Balance
+                </h1>
+                <h3 class="text-5xl text-center">$<span id="total-balance">1400</span></h3>
+            </div>
+            </div>
+        </section>
+
+                       <!-- deposit amount -->
+
+
+        <section>
+        <div class="grid grid-cols-2 gap-6 mt-11 mx-auto w-3/4  text-center">
+     <div class="bg-green-200 rounded p-4 p-7">
+         <h1 class="text-4xl  text-pink-400 font-extrabold"> Deposit</h1>
+              <input id="input" class="w-3/5 rounded p-2 text-center mt-4" type="text" placeholder="$ amount you want to deposit" >
+                  <button id="deposit-button"
+                   class="bg-yellow-600 ml-2 px-4 rounded py-2 text-white font-medium">Deposite</button>
+     </div>
+
+                    <!-- Withdraw amount -->
+
+
+         <div class="bg-yellow-100 rounded p-4 p-7">
+             <h1 class="text-4xl  text-yellow-400 font-extrabold">Withdraw</h1>
+                <input id="decrease-amount" class="w-3/5 rounded p-2 mt-4" type="text" placeholder="$ amount you want to withdraw">
+                   <button id="Withdraw-button"
+                    class="bg-yellow-600 ml-2 px-4 rounded py-2 text-white font-medium">Withdraw
+                    </button>
+         </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/balance.js"></script>
+</body>
+</html>
